@@ -1,0 +1,29 @@
+.browseSentences {
+  width: 700px;
+}
+
+.browse {
+  height: 300px;
+  overflow: auto;
+}
+
+.sentence {
+  padding: 10px 20px;
+  margin: 10px 10px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+.searchQuery {
+  width: 100%;
+  font-size: 1.1rem;
+  margin: 20px 0;
+  padding: 12px;
+  border: 1px solid $color-site;
+  border-radius: 15px;
+}

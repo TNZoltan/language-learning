@@ -1,0 +1,60 @@
+.viewTranslation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.audioContainer {
+  display: flex;
+}
+
+.yours {
+  border: 2px dashed $color-site;
+  padding: 0 10px 10px 10px;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 10px;
+  width: 160px;
+  height: 200px;
+  background: rgb(55, 42, 42);
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.plus {
+  background: lightgray;
+}
+
+.skeletonTile {
+  @include skeleton-animation;
+}
+
+.deletionLink{
+  text-align: end;
+  color: red;
+  text-decoration: underline;
+}
+
+
+.playContainer {
+  height: 20%;
+}
+.voterContainer {
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10%;
+}
+
+.trashButton {
+  width: 100%;
+  background: lightgray;
+  border: none;
+}

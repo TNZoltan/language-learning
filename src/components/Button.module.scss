@@ -1,0 +1,47 @@
+.button {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  border-width: 2px 2px 4px;
+  transition: filter .2s;
+
+  &:disabled{
+    opacity: 0.5;
+
+    &:hover {
+      cursor:no-drop;
+    }
+  }
+}
+
+.neutralButton {
+  background: none;
+}
+
+.transparentButton {
+  color: $color-white;
+  font-weight: bold;
+  background: none;
+}
+
+.primaryButton {
+  color: $color-white;
+  background: $color-primary;
+}
+
+.secondaryButton {
+  color: $color-white;
+  background: $color-secondary;
+}
+
+.smallButton {
+  font-size: 0.9rem;
+}
+
+.normalButton {
+  font-size: 1.1rem;
+}
+
+.largeButton {
+  font-size: 1.2rem;
+}

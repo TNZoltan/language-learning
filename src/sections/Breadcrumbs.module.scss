@@ -1,0 +1,33 @@
+$height: 60px;
+
+.breadcrumbs {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  height: $height;
+  padding-top: 20px;
+
+  a {
+    color: $color-primary;
+  }
+}
+
+.colorLine {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: $height;
+  top: 90px;
+  left: 0;
+  background: $color-sections;
+}
+
+.skeleton {
+  @include skeleton-animation;
+  height: 25px;
+  width: 300px;
+}
+
+.wider {
+  width: 600px;
+}

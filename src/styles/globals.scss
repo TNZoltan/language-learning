@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+// https://fonts.google.com/specimen/Ubuntu
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Ubuntu', sans-serif;
+  color: $color-site;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited, &:focus, &:active, &:hover {
+    color: inherit;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button:hover, a:hover {
+  cursor: pointer;
+}
+
+*::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+  border: 1px solid transparent;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 8px;
+  margin-left: 2px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+  border: 1px solid transparent;
+	background-color: rgb(10, 10, 10, 0.3);
+}
+
+.badge {
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 5px;
+  color: $color-white;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+@each $name, $glyph in $color-categories {
+  .bg-#{$name} {
+    background-color: $glyph;
+  }
+
+  .underline-#{$name} {
+    text-decoration: underline;
+    text-decoration-color: $glyph;
+    text-decoration-thickness: 0.2em;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.3em;
+  }
+}

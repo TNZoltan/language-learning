@@ -1,0 +1,32 @@
+.voter {
+  display: flex;
+}
+
+.voteButton {
+  background: rgb(226, 209, 209);
+  border: none;
+  margin: 0 10px;
+}
+
+.large {
+  width: 120px;
+  padding: 20px;
+}
+
+.small {
+  width: 60px;
+  padding: 10px 15px;
+  display: flex;
+}
+
+.medium {
+  width: 50%;
+  margin: 0;
+  padding: 15px 20px;
+  display: flex;
+}
+
+
+.active {
+  background: rgb(125, 222, 125);
+}

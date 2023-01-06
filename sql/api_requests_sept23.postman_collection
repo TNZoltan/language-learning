@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "30fd5cb6-2eaf-4f8c-81c1-59e09b0b9163",
+		"name": "Frontend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Make a translation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sentence_entity_id\": 2,\r\n    \"user_id\": \"258b8463-82c8-4141-b406-5843c7f6d342\",\r\n    \"translation\": \"Możesz podać sól?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/translations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"translations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make a translation alternative",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sentence_id\": \"2\",\r\n    \"language_slug\": \"pl\",\r\n    \"user_id\": \"258b8463-82c8-4141-b406-5843c7f6d342\",\r\n    \"translation\": \"Możesz podać sól?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/translations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"translations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make an option",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sentence_entity_id\": 2,\r\n    \"user_id\": \"258b8463-82c8-4141-b406-5843c7f6d342\",\r\n    \"replacement_index\": 1,\r\n    \"extra_words\": [\"granatowym\", \"żółta\", \"przygotowuje\"],\r\n    \"extra_words_translated\": [\"navy blue\", \"yellow\", \"preparing\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/options",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"options"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make an image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sentence_entity_id\": 2,\r\n    \"user_id\": \"258b8463-82c8-4141-b406-5843c7f6d342\",\r\n    \"filename\": \"test.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/images",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make an audio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sentence_entity_id\": 2,\r\n    \"user_id\": \"258b8463-82c8-4141-b406-5843c7f6d342\",\r\n    \"filename\": \"test.webm\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/audio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"audio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a translation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/translations/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"translations",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an option",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/options/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"options",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an image",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/image/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an audio",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/audio/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"audio",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all translations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/translations?sentence_entity_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"translations"
+					],
+					"query": [
+						{
+							"key": "sentence_entity_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all options",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/options?sentence_entity_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"options"
+					],
+					"query": [
+						{
+							"key": "sentence_entity_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all images",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/images?sentence_entity_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"images"
+					],
+					"query": [
+						{
+							"key": "sentence_entity_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all audio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/audio?sentence_entity_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"audio"
+					],
+					"query": [
+						{
+							"key": "sentence_entity_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get everything",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/sentences/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sentences",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all sentences (from segment)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/segments/pl/home",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"segments",
+						"pl",
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all segments (from country)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/segments/pl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"segments",
+						"pl"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNjYzMzU3MDUzLCJzdWIiOiIyNThiODQ2My04MmM4LTQxNDEtYjQwNi01ODQzYzdmNmQzNDIiLCJlbWFpbCI6InRyYW4uem9sdGFuQHByb3Rvbm1haWwuY29tIiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6e30sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwic2Vzc2lvbl9pZCI6IjJlYTFkNDk4LWI2ODQtNDE3ZS04N2I2LWQxY2U1N2VmOTBiMCJ9.8wDsUNMFwRh_sdyOSt5l89nTgDauCsMj-HmweUTyhMA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

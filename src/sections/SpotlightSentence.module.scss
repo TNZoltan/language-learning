@@ -1,0 +1,25 @@
+.spotlight {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  height: 130px;
+}
+
+.subtitle {
+  color: $color-site;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.title {
+  color: $color-site;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.9rem;
+}
+
+.skeleton {
+  @include skeleton-animation;
+
+  width: 400px;
+  height: 40px;
+}

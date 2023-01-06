@@ -1,0 +1,32 @@
+_Country_
+
+Trust level (provides base score and status)
+
+Initial (0) 
+Experimental (500)
+  - 50 contributors
+Active (1500)
+  - 500 contributors
+Trusted (3000)
+  - 2000 contributors
+
+Progress (builds score)
+
+Each vote adds 0.1 points
+Each image and audio submissions add 0.3 points
+Each sentence entity adds 0.5 points
+Final score gets rounded
+
+At score 1500 a language is considered experimental
+
+A daily script calculates all of the above per country.
+
+Once a country is granted a new trust score, it cannot lose it.
+
+Examples:
+Turkish has 21 AC, 124 RC, 142 SE, 34 images, 23 audio, and 821 votes: 670.2 points
+Kenyan has 10 AC, 20 RC, 523 SE, 181 images, 102 audio and 560 votes: 492.4 points
+Hungarian has 42 AC, 230 RC, 821 SE, 629 images, 344 audio and 1670 votes: 2369.4 points
+
+
+

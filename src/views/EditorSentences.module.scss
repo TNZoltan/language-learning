@@ -1,0 +1,38 @@
+.editorSentences {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.sentence {
+  padding: 15px 25px;
+  margin: 15px 0;
+  border: 1px solid rgba(0, 0, 0, 0.092);
+  border-radius: 10px;
+  font-size: 1.2rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sentenceContainer {
+  padding-top: 10px;
+}
+
+.stats {
+  display: flex;
+}
+
+.stat {
+  margin: 0 10px;
+  color: $color-site;
+  text-align: center;
+  font-weight: 500;
+}
+
+.statNumber {
+  font-size: 1.4rem;
+  font-weight: 700;
+}

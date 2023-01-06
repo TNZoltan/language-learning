@@ -1,0 +1,97 @@
+.editorSubmissions {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.images {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > div:hover {
+    cursor: pointer;
+  }
+}
+
+.image {
+  width: 20%;
+  aspect-ratio: 1;
+  background-size: cover;
+}
+
+.imagePlaceholder {
+  width: 20%;
+  aspect-ratio: 1;
+  border: 4px dashed $color-site;
+  border-radius: 5px;
+}
+
+.plus {
+  width: 20%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightgray;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.toBeNamed {
+  width: 60%;
+}
+
+.mainTranslation {
+  width: 100%;
+  margin: 30px 0 8px 0;
+  border: 3px double $color-primary;
+  position: relative;
+
+  > div {
+    padding: 14px;
+    margin: 4px;
+    border: 2px solid $color-site;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &:after{
+    content: 'SELECTED';
+    position: absolute;
+    top: -23px;
+    left: -1px;
+    color: $color-primary;
+    font-weight: bold;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.otherTranslations {
+  padding: 7px 14px;
+  margin: 5px 10px;
+  border: 2px solid $color-site;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.newSentence {
+  justify-content: center;
+}
+
+.translation {
+  font-size: 1.2rem;
+  font-weight: 700;
+}

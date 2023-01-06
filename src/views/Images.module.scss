@@ -1,0 +1,55 @@
+.images {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.imagesContainer {
+  display: flex;
+}
+
+.yours {
+  border: 2px dashed $color-site;
+  padding: 0 10px 10px 10px;
+}
+
+.userButton {
+  width: 100%;
+  background: lightgray;
+  border: none;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  width: 200px;
+  height: 245px;
+  background: rgb(55, 42, 42);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  div {
+    width: 100%;
+  }
+}
+
+.plus {
+  background: lightgray;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  input {
+    max-width: 200px;
+  }
+}
+
+.skeletonTile {
+  @include skeleton-animation;
+}

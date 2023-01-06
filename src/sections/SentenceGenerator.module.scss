@@ -1,0 +1,60 @@
+.sentenceGenerator {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.prep {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: column;
+
+  button {
+    width: 120px;
+  }
+}
+
+.categorize {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.words {
+  height: 90px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  div {
+    
+    margin-right: 15px;
+    font-size: 3rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.selected {
+  align-self: flex-start;
+}
+
+.disabled {
+  div {
+    opacity: 0.3;
+  }
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  
+  div {
+    transition: opacity 100ms;
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+}

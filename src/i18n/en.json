@@ -1,0 +1,12 @@
+{
+  "countries": {
+    "pl": "Polish"
+  },
+  "segments": {
+    "home": "Home",
+    "street": "Street",
+    "shop": "Shop",
+    "journey": "On the way",
+    "party": "Party"
+  }
+}

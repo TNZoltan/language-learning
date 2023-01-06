@@ -1,0 +1,22 @@
+.text {
+  padding: 5px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: .5px solid $color-site;
+}
+
+.textDisabled {
+  opacity: 0.5
+}
+
+.textError {
+  border: 1px solid $color-red;
+}
+
+.errorText {
+  height: 20px;
+  text-align: left;
+  margin-left: 2px;
+  margin-top: 2px;
+  color: $color-red;
+}

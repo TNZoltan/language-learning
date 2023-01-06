@@ -1,0 +1,29 @@
+.editorSegments {
+  padding: 50px 15% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.segmentButton {
+  width: 25%;
+  height: 100px;
+  margin: 0 3% 35px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border: 1px solid $color-site;
+  background-size: cover;
+  position: relative;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.segmentTitle {
+  text-align: center;
+  vertical-align: bottom;
+  margin-bottom: 3%;
+}
